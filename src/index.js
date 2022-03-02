@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   res.status(200).json({ message: 'fx is five alive' });
 });
 
-const currencies = ['EUR/USD', 'USD/NGN', 'GBP/USD', 'YEN/USD', 'EUR/GBP', 'CAD/USD', 'EUR/YEN', 'YEN/CAD', 'AUD/USD', 'GBP/AUD', 'INR/USD'];
+const currencies = ['EUR/USD', 'USD/NGN', 'GBP/USD', 'CNY/USD', 'EUR/GBP', 'CAD/USD', 'EUR/CNY', 'CNY/CAD', 'EGP/USD', 'GBP/INR','INR/USD'];
 setInterval( async() => {
         try {
             const results = currencies.map(async (currency) => {
